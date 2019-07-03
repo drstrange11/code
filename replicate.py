@@ -7,5 +7,8 @@ m = []
 for i in range(len(l)-1):
     if l[i]==l[i+1]:
         m.append(l[i])
-for x in set(m):
-    print(x,end=" ")
+if m:
+    for x in set(m):
+        print(x,end=" ")
+else:
+    print("unique")
