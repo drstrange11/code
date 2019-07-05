@@ -3,6 +3,8 @@ n = int(input())
 j=1
 for i in range(n):
     for k in range(j):
-        print(1,end=" ")
+        if k==j-1:
+            print(1)
+        else:
+            print(1,end=" ")
     j+=2
-    print()
