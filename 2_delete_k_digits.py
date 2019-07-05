@@ -1,5 +1,4 @@
-#Problem Link - https://www.guvi.in/codekata-level?level=pro&set=1 , 2
-
+#Problem Link - https://www.guvi.in/codekata-level?level=pro&set=1 ,2
 num,k = map(int,input().split())
 num = list(str(num))
 stack = []
