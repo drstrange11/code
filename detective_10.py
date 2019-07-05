@@ -3,6 +3,8 @@
 n = int(input())
 l = list(map(int,input().split()))
 s = 0
-for x in l:
-    s = s+ (x*(x+1)//2) - x
+for i in range(1,len(l)):
+    for x in l[:i]:
+        if x<l[i]:
+            s+=x
 print(s)
