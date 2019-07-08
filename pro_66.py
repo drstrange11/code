@@ -14,7 +14,7 @@ if (a2 >= 0):
         if (a2 < 0):
             count = -1
             break
-        m = 2*b -m
+        m = 2*a -m
     print(count)
 else:
     print(-1)
