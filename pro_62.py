@@ -3,7 +3,7 @@ l=len(s)
 c=[]
 for i in range(0,l):
     for j in range(i+1,l):
-        c.append(a[i:j+1])
+        c.append(s[i:j+1])
 max=1
 d=[]
 for i in c:
