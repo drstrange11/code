@@ -1,9 +1,8 @@
-a=str(input())
-b=len(a)
+s=str(input())
+l=len(s)
 c=[]
-
-for i in range(0,b):
-    for j in range(i+1,b):
+for i in range(0,l):
+    for j in range(i+1,l):
         c.append(a[i:j+1])
 max=1
 d=[]
@@ -12,4 +11,4 @@ for i in c:
         d.append(i)
 d.sort(key=len)
 d=d[::-1]
-print(len(a)-len(d[0]))
+print(len(s)-len(d[0]))
