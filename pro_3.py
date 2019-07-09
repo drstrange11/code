@@ -1,8 +1,8 @@
 #Transform
 def find(a,b,l_diff):
     for i in range(len(a)):
-        if a[i]!=b[i]:
-            l_diff+=1
+        if not a[i] in b:
+            d+=1
     return l_diff
 a,b = input().split()
 l_diff = abs(len(b)-len(a))
