@@ -7,9 +7,9 @@ for _ in range(m):
 for i in range(n-s,n):
 	r=0
 	d=i
-	while(d>0):
+	while d>0:
 		r+=(d%10)
 		d=d//10
-	if(r+i==n):
+	if r+i==n:
 		l.append(i)
 print(len(l),*l,sep='\n')
