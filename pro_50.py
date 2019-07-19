@@ -12,10 +12,10 @@ for i in range(n):
       if l[j][0]==s:
         s=l[j][1]
         c+=l[j][2]
-    if c< and s==m:
-      =c
+    if c<mod and s==m:
+      mod=c
       f+=1
 if f==0:
   print(-1)
 else:
-  print()
+  print(mod)
