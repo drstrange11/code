@@ -1,9 +1,6 @@
 n=int(input())
-l1=list(map(int,input().split()))
-c=1
-l=[]
-for i in l1:
-  c=c*i
-for i in l1:
-  l.append(c//i)
-print(*l)
+f=list(map(int,input().split()))
+s=max(f)
+d=min(f)
+a=s-d
+print(a)
