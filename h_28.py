@@ -1,3 +1,4 @@
+#
 s = input()
 s = list(set(s))
 s.sort()
