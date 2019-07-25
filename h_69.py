@@ -1,3 +1,4 @@
+#69
 n=input()
 m=n.count("@")
 a=n.count(".")
