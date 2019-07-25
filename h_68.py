@@ -1,3 +1,4 @@
+#68
 n=int(input())
 h=input()
 h=h.split()
