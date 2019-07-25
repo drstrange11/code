@@ -1,3 +1,4 @@
+#62
 n=int(input())
 f=list(map(int,input().split()))
 s=max(f)
