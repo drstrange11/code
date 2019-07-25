@@ -1,3 +1,4 @@
+#66
 n=input()
 s=input().split()
 c=0
