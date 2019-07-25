@@ -1,5 +1,5 @@
-N=input().split()
-k=int(N[1])
+n=input().split()
+k=int(n[1])
 c=0
 a=list(map(int,input().split()))
 for i in range(0,len(a)):
