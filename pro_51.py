@@ -15,4 +15,4 @@ for i in range(n):
       break
   l2.append(str(c))
   c=1
-print(''.join(l2))
+print(' '.join(l2))
