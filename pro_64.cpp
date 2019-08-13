@@ -36,6 +36,6 @@ int main()
 		}
 		cout<<a[x]<<" ";
 	}
-	
+	cout<<" ";
 	return 0;
 }
