@@ -6,6 +6,6 @@ a.sort()
 b.sort()
 l=[]
 for i in range(n):
-    l.append(m-q[i])
-    l.append(abs(w[i]-q[i]) +(w[i]-m))
+    l.append(m-b[i])
+    l.append(abs(a[i]-b[i]) +(a[i]-m))
 print(max(l))
