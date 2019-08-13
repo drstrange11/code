@@ -1,46 +1,41 @@
-#include<iostream>
-#include<cstdio>
-#define MAXN 200005
+#include<bits/stdc++.h>
 using namespace std;
-int n,q,m;
-int a[MAXN];
-int T[MAXN],L[MAXN],R[MAXN];
+ 
+int a[200000+50]={0};
+ 
+struct zxttql
+{
+	int t,l,r;
+} que[200000+50];
+ 
 int main()
 {
-	scanf("%d%d%d",&n,&q,&m);
-	for(int i=1;i<=n;i++) scanf("%d",&a[i]);
-	for(int i=1;i<=q;i++) scanf("%d%d%d",&T[i],&L[i],&R[i]);
-	int b;
-	while(m--)
+	ios::sync_with_stdio(false);
+	//cin.tie(0);
+	
+	int n,q,m;
+	cin>>n>>q>>m;
+	for (int i=1;i<=n;i++) cin>>a[i];
+	for (int i=1;i<=q;i++) cin>>que[i].t>>que[i].l>>que[i].r;
+	
+	for (int z=1;z<=m;z++)
 	{
-		scanf("%d",&b);
-		int tar=b;
-		for(int i=q;i>=1;i--)
+		int x;
+		cin>>x;
+		for (int i=q;i>=1;i--)
 		{
-			int l=L[i],r=R[i];
-			if(T[i]==1)
+			if (que[i].l<=x && x<=que[i].r)
 			{
-				if(tar>=l&&tar<=r)
+				if (que[i].t==1)
 				{
-					if(tar!=l)
-					{
-						tar--;
-					}
-					else
-					{
-						tar=r;
-					}
+					if (x==que[i].l) x=que[i].r;
+					else x--;
 				}
-			}
-			else
-			{
-				if(tar>=l&&tar<=r) tar=r+l-tar;
+				else x=que[i].r+que[i].l-x;
 			}
 		}
-		if(m==0)
-		printf("%d",a[tar]);
-		else
-		printf("%d ",a[tar]);
+		cout<<a[x]<<" ";
 	}
+	
 	return 0;
 }
