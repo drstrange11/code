@@ -37,6 +37,9 @@ int main()
 				if(tar>=l&&tar<=r) tar=r+l-tar;
 			}
 		}
+		if(m-1==0)
+		printf("%d",a[tar]);
+		else
 		printf("%d ",a[tar]);
 	}
 	return 0;
