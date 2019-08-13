@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
- 
+ //
 int a[200000+50]={0};
  
 struct zxttql
