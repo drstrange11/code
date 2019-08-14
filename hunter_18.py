@@ -1,9 +1,9 @@
 #18
-n=int(raw_input())
+n=int(input())
 l1,l2=[],[]
 c=0
 for i in range(0,n):
-  l1.append(list(map(int,raw_input().split())))
+  l1.append(list(map(int,input().split())))
 for i in range(0,n+2):
   if i==0:
     l2.append([0]*(n+2))
