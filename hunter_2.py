@@ -1,0 +1,5 @@
+t = int(input())
+l = input().split()
+l.sort(reverse=True)
+k = ''.join(x for x in l)
+print(int(k))
