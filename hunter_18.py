@@ -1,4 +1,5 @@
 #18
+#updated
 n=int(input())
 l1,l2=[],[]
 c=0
