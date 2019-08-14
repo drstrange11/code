@@ -1,13 +1,13 @@
 #19
 l=list(map(int,input().split()))
-n=int(axx[0])
-x=int(axx[1])
-y=[]
+n=int(l[0])
+k=int(l[1])
+l1=[]
 for i in range(0,n):
-    y.append(input().split())
-uniq=set(y[0])
-for i in y:
-    uniq=uniq & set(i)
-l1=list(uniq)
-l1.sort()
-print(*l1)
+    l1.append(input().split())
+s=set(l1[0])
+for i in l1:
+    s=s & set(i)
+m=list(s)
+m.sort()
+print(*m)
