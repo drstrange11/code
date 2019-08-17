@@ -4,7 +4,7 @@ k=max(n,m)
 l=[]
 for i in range(1,k):
     if n%i==0 and m%i==0:
-        l.alend(i)
+        l.append(i)
 if len(l)==1:
     print("yes")
 else:
